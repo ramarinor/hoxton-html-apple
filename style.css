@@ -15,13 +15,19 @@ html {
 	right: 0;
 }
 
-.main-nav {
+.main-nav,
+.small-nav {
 	display: grid;
 	justify-items: center;
 	padding: 0 1rem;
 }
 
-.main-nav__list {
+.small-nav {
+	display: none;
+}
+
+.main-nav__list,
+.small-nav__list {
 	list-style: none;
 	width: 100%;
 	max-width: 996px;
@@ -29,19 +35,23 @@ html {
 	grid-auto-flow: column;
 	justify-content: space-between;
 }
-.main-nav__item {
+.main-nav__item,
+.small-nav__item {
 	height: 2.75rem;
 	display: grid;
 	align-items: center;
 }
 
-.main-nav__link {
+.main-nav__link,
+.small-nav__link {
 	color: #999;
 	text-decoration: none;
 	font-size: 0.75em;
 }
 .main-nav__link:hover,
-.main-nav__link:active {
+.main-nav__link:active,
+.small-nav__link:hover,
+.small-nav__link:active {
 	color: white;
 }
 .apple-logo:hover,
@@ -206,4 +216,13 @@ html {
 
 .tv .product-link__cta a {
 	color: black;
+}
+
+@media screen and (max-width: 833px) {
+	.main-nav {
+		display: none;
+	}
+	.small-nav {
+		display: grid;
+	}
 }
