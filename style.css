@@ -1,0 +1,44 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: "Helvetica", sans-serif;
+}
+
+.main-header {
+	background-color: #333333;
+}
+.main-nav__list {
+	list-style: none;
+	display: grid;
+	grid-auto-flow: column;
+	place-content: center;
+	gap: 1.2rem;
+	padding: 0.25rem 0 0.5rem;
+}
+
+.main-nav__item {
+	display: inline;
+}
+
+.apple-logo:hover path {
+	fill: white;
+}
+
+.main-nav__link {
+	color: #a6a6a6;
+	text-decoration: none;
+	font-size: 0.5rem;
+	vertical-align: middle;
+}
+.main-nav__link span {
+	vertical-align: middle;
+	font-size: 0.75rem;
+}
+.main-nav__link:hover,
+.main-nav__link:active {
+	color: white;
+}
