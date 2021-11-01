@@ -12,34 +12,37 @@ html {
 	width: 100%;
 	position: fixed;
 }
+
+.main-nav {
+	display: grid;
+	justify-items: center;
+	padding: 0 1rem;
+}
+
 .main-nav__list {
 	list-style: none;
+	width: 100%;
+	max-width: 996px;
 	display: grid;
 	grid-auto-flow: column;
-	place-content: center;
-	gap: 1.2rem;
-	padding: 0.25rem 0 0.5rem;
+	justify-content: space-between;
 }
-
 .main-nav__item {
-	display: inline;
-}
-
-.apple-logo:hover path {
-	fill: white;
+	height: 2.75rem;
+	display: grid;
+	align-items: center;
 }
 
 .main-nav__link {
-	color: #a6a6a6;
+	color: #999;
 	text-decoration: none;
-	font-size: 0.5rem;
-	vertical-align: middle;
-}
-.main-nav__link span {
-	vertical-align: middle;
-	font-size: 0.75rem;
+	font-size: 0.75em;
 }
 .main-nav__link:hover,
 .main-nav__link:active {
 	color: white;
+}
+.apple-logo:hover,
+.apple-logo:active {
+	fill: white;
 }
