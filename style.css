@@ -3,13 +3,14 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-
 html {
 	font-family: "Helvetica", sans-serif;
 }
 
 .main-header {
 	background-color: #333333;
+	width: 100%;
+	position: fixed;
 }
 .main-nav__list {
 	list-style: none;
