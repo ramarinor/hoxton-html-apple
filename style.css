@@ -81,6 +81,7 @@ html {
 }
 
 .product-link__subtitle {
+	padding: 1rem;
 	font-size: 1.1rem;
 }
 
@@ -90,7 +91,6 @@ html {
 
 .product-link__cta a {
 	padding: 0.5rem 1rem;
-	color: #06c;
 	text-decoration: none;
 }
 
@@ -103,7 +103,7 @@ html {
 .iphone-13,
 .macbook {
 	padding: 2.75rem;
-	height: 32rem;
+	height: 736px;
 	background-position: left 50% bottom 50%;
 	background-size: cover;
 	background-clip: border-box;
@@ -118,17 +118,19 @@ html {
 	background-image: url(https://www.apple.com/v/home/ag/images/heroes/macbook-pro/hero_macbookpro__eatonjfwvuc2_medium_2x.jpg);
 }
 .iphone-13-pro .product-link__title,
-.macbook .product-link__title {
+.macbook .product-link__title,
+.products .product-link__title {
 	color: black;
 }
 .iphone-13-pro .product-link__subtitle,
-.macbook .product-link__subtitle {
+.macbook .product-link__subtitle,
+.products .product-link__subtitle {
 	color: #1d1d1f;
-	font-size: 1.1rem;
 	font-weight: normal;
 }
 .iphone-13-pro .product-link__cta a,
-.macbook .product-link__cta a {
+.macbook .product-link__cta a,
+.products .product-link__cta a {
 	color: #06c;
 }
 
@@ -147,4 +149,61 @@ html {
 
 .iphone-13 .product-link__cta a {
 	color: #2997ff;
+}
+
+.macbook {
+	margin-bottom: 0;
+}
+
+.products {
+	padding: 0.5rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-auto-rows: 600px;
+	gap: 0.5rem;
+}
+
+.product {
+	/* background-color: red; */
+	background-position: left 50% bottom 50%;
+	background-size: cover;
+	background-clip: border-box;
+	background-repeat: no-repeat;
+	margin-bottom: 0.5rem;
+}
+.homepod {
+	background-image: url(https://www.apple.com/v/home/ag/images/promos/apple-card/tile__cauwwcyyn9hy_medium_2x.jpg);
+}
+
+.airpods {
+	padding-bottom: 1rem;
+	display: grid;
+	align-content: end;
+	background-image: url(https://www.apple.com/v/home/ag/images/promos/airpods/tile_airpods__fuv6vgn42y2q_medium_2x.jpg);
+}
+
+.watch {
+	background-image: url(https://www.apple.com/v/home/ag/images/promos/watch-series-7/tile_watch__e9n11b6m6yq2_medium_2x.jpg);
+}
+
+.arcade {
+	background-image: url(https://www.apple.com/v/home/ag/images/promos/arcade-bundle/tile_arcade__ewkth5cd0wia_medium_2x.jpg);
+}
+
+.card {
+	background-image: url(https://www.apple.com/v/home/ag/images/promos/apple-card/tile__cauwwcyyn9hy_medium_2x.jpg);
+}
+.tv {
+	padding: 0.5rem;
+	display: grid;
+	align-content: space-between;
+	background-image: url(https://www.apple.com/v/home/ag/images/promos/tv-plus-charlie-brown-halloween/tile_charliebrown__eolk1igxqpw2_medium_2x.jpg);
+}
+
+.product-link__description-paragraph {
+	color: black;
+}
+
+.tv .product-link__cta a {
+	color: black;
 }
