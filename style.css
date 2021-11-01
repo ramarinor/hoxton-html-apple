@@ -69,6 +69,10 @@ html {
 	text-decoration: underline;
 }
 
+.product-link__title {
+	font-size: 2rem;
+}
+
 .product-link {
 	display: block;
 	text-align: center;
@@ -76,12 +80,16 @@ html {
 	text-decoration: none;
 }
 
+.product-link__subtitle {
+	font-size: 1.1rem;
+}
+
 .product-link__cta {
-	display: grid;
-	grid-auto-flow: column;
+	text-align: center;
 }
 
 .product-link__cta a {
+	padding: 0.5rem 1rem;
 	color: #06c;
 	text-decoration: none;
 }
@@ -92,7 +100,8 @@ html {
 }
 
 .iphone-13-pro,
-.iphone-13 {
+.iphone-13,
+.macbook {
 	padding: 2.75rem;
 	height: 32rem;
 	background-position: left 50% bottom 50%;
@@ -105,14 +114,22 @@ html {
 .iphone-13-pro {
 	background-image: url(https://www.apple.com/v/home/ag/images/heroes/iphone-13-pro/hero_iphone_13pro__dhnsegysa42u_mediumtall_2x.jpg);
 }
-.iphone-13-pro .product-link__title {
-	color: black;
-	font-size: 2rem;
+.macbook {
+	background-image: url(https://www.apple.com/v/home/ag/images/heroes/macbook-pro/hero_macbookpro__eatonjfwvuc2_medium_2x.jpg);
 }
-.iphone-13-pro .product-link__subtitle {
+.iphone-13-pro .product-link__title,
+.macbook .product-link__title {
+	color: black;
+}
+.iphone-13-pro .product-link__subtitle,
+.macbook .product-link__subtitle {
 	color: #1d1d1f;
 	font-size: 1.1rem;
 	font-weight: normal;
+}
+.iphone-13-pro .product-link__cta a,
+.macbook .product-link__cta a {
+	color: #06c;
 }
 
 .iphone-13 {
@@ -126,4 +143,8 @@ html {
 	color: #fec2eb;
 	font-size: 1.1rem;
 	font-weight: normal;
+}
+
+.iphone-13 .product-link__cta a {
+	color: #2997ff;
 }
