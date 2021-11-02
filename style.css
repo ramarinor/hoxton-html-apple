@@ -174,7 +174,6 @@ html {
 }
 
 .product {
-	/* background-color: red; */
 	background-position: left 50% bottom 50%;
 	background-size: cover;
 	background-clip: border-box;
@@ -216,6 +215,10 @@ html {
 
 .tv .product-link__cta a {
 	color: black;
+}
+
+.tv .product-link__description img {
+	width: 100%;
 }
 
 @media screen and (max-width: 833px) {
