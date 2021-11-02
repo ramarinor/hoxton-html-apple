@@ -231,7 +231,7 @@ html {
 	border-bottom: 1px solid #d2d2d7;
 }
 .disclaimer p {
-	line-height: 1.3rem;
+	padding-bottom: 0.4rem;
 }
 .support-links-big {
 	padding: 0.5rem 0;
