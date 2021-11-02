@@ -271,6 +271,42 @@ html {
 	color: unset;
 	text-decoration: none;
 }
+.info {
+	line-height: 1.2rem;
+	border-bottom: 1px solid #d2d2d7;
+}
+
+.info a {
+	color: #06c;
+	text-decoration: none;
+}
+.info a:hover,
+.info a:active {
+	text-decoration: underline;
+}
+.copyrights {
+	padding: 0.5rem;
+	display: grid;
+	grid-auto-flow: column;
+	justify-content: space-between;
+}
+
+.copyrights ul {
+	display: grid;
+	grid-auto-flow: column;
+	list-style: none;
+	gap: 0.7rem;
+}
+.copyrights a {
+	color: unset;
+	text-decoration: none;
+}
+
+.copyrights a:hover,
+.copyrights a:active {
+	text-decoration: underline;
+}
+
 @media screen and (max-width: 833px) {
 	.main-nav {
 		display: none;
